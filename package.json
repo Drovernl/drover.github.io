@@ -4,14 +4,14 @@
   "description": "Testing MDX with 11ty",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jaccomeijer/11ty-2025.git"
+    "url": "git+https://github.com/jaccomeijer"
   },
   "scripts": {
     "build": "npm run clean-docs && npx @11ty/eleventy && npm run create-cname && npm run create-robots",
     "check-links": "find src -type f -name *.mdx -exec npx markdown-link-check --quiet {} \\;",
     "clean-docs": "rm -rf docs",
-    "create-cname": "echo www.jaccomeijer.nl > docs/CNAME",
-    "create-robots": "echo 'Sitemap: https://www.jaccomeijer.nl/sitemap.xml' > docs/robots.txt",
+    "create-cname": "echo www.drover.nl > docs/CNAME",
+    "create-robots": "echo 'Sitemap: https://www.drover.nl/sitemap.xml' > docs/robots.txt",
     "design-tokens-lib": "designTokens transform src/green-lib/design-tokens/tokens.config.json",
     "design-tokens-ref": "designTokens transform src/reference/design-tokens/tokens.config.json",
     "design-tokens-site": "designTokens transform src/site/design-tokens/tokens.config.json",
@@ -21,9 +21,9 @@
   "author": "Jacco Meijer <jacco@jaccomeijer.nl> (https://www.jaccomeijer.nl/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jaccomeijer/11ty-2025/issues"
+    "url": "https://github.com/jaccomeijer"
   },
-  "homepage": "https://github.com/jaccomeijer/11ty-2025#readme",
+  "homepage": "https://github.com/jaccomeijer",
   "type": "module",
   "dependencies": {
     "@11ty/eleventy": "3.0.0",
