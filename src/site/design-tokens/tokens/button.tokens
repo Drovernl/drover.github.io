@@ -2,7 +2,7 @@
   "button": {
     "primary": {
       "color": {
-        "$value": "{color.primary.500}"
+        "$value": "{color.secondary.400}"
       },
       "contrast": {
         "color": {

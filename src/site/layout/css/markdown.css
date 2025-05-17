@@ -1,6 +1,10 @@
 .markdown {
   a {
-    color: var(--color-primary-500);
+    color: var(--color-secondary-400);
+  }
+
+    a.fat-link {
+    color: var(--color-mono-000);
   }
 
   a > .topic-card {

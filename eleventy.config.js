@@ -21,10 +21,13 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'node_modules/feather-icons/dist/feather-sprite.svg': 'feather-sprite.svg' })
   eleventyConfig.addPassthroughCopy({ 'src/assets/favicon/favicon.ico': 'favicon.ico' })
   eleventyConfig.addPassthroughCopy({
-    'src/assets/fonts/Montserrat-VariableFont_wght.ttf': 'Montserrat-VariableFont_wght.ttf',
-  })
-  eleventyConfig.addPassthroughCopy({
     'src/assets/fonts/Exo-VariableFont_wght.ttf': 'Exo-VariableFont_wght.ttf',
+    'src/assets/fonts/Montserrat-VariableFont_wght.ttf': 'Montserrat-VariableFont_wght.ttf',
+
+    // Drover
+    'src/site/fonts/MavenPro-VariableFont_wght.ttf': 'MavenPro-VariableFont_wght.ttf',
+    'src/site/fonts/Roboto-Italic-VariableFont_wdth.ttf': 'Roboto-Italic-VariableFont_wdth.ttf',
+    'src/site/fonts/Roboto-VariableFont_wdth.ttf': 'Roboto-VariableFont_wdth.ttf',
   })
 
   // Plugins

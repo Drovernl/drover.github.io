@@ -1396,15 +1396,35 @@
 
 @layer custom {
   @font-face {
-    font-family: Exo;
-    src: url("/Exo-VariableFont_wght.ttf") format("truetype-variations");
+    font-family: MavenPro;
+    src: url("/MavenPro-VariableFont_wght.ttf") format("truetype-variations");
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: Roboto;
+    src: url("/Roboto-Italic-VariableFont_wdth.ttf") format("truetype-variations");
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: Roboto;
+    src: url("/Roboto-VariableFont_wdth.ttf") format("truetype-variations");
     font-weight: 100 1000;
     font-stretch: 25% 151%;
     font-display: swap;
   }
 
   .markdown a {
-    color: var(--color-primary-500);
+    color: var(--color-secondary-400);
+  }
+
+  .markdown a.fat-link {
+    color: var(--color-mono-000);
   }
 
   .markdown a > .topic-card {
@@ -1455,7 +1475,7 @@
   --border-radius-circle: 9999px;
   --border-radius-pill: .5rem;
   --border-radius-rounded: .35rem;
-  --button-primary-color: #028f97;
+  --button-primary-color: #32829f;
   --button-primary-contrast-color: #fff;
   --color-mono-000: #fff;
   --color-mono-100: #e6e6e6;
@@ -1465,18 +1485,24 @@
   --color-mono-500: #4d4d4d;
   --color-mono-600: #262626;
   --color-mono-700: #000;
-  --color-primary-100: #cdfcfe;
-  --color-primary-200: #81f7fd;
-  --color-primary-300: #36f2fc;
-  --color-primary-400: #03d7e2;
-  --color-primary-500: #028f97;
-  --color-primary-600: #01484b;
-  --font-body-family: "Helvetica Neue", sans-serif;
+  --color-primary-100: #fce6cf;
+  --color-primary-200: #f8c187;
+  --color-primary-300: #f49c3e;
+  --color-primary-400: #ca6e0c;
+  --color-primary-500: #914f08;
+  --color-primary-600: #482704;
+  --color-secondary-100: #d8ecf3;
+  --color-secondary-200: #9ecfe0;
+  --color-secondary-300: #64b2ce;
+  --color-secondary-400: #32829f;
+  --color-secondary-500: #255f74;
+  --color-secondary-600: #12303a;
+  --font-body-family: Roboto, "Helvetica Neue", sans-serif;
   --font-body-margin-block-start: clamp(.5625rem, .106rem + 2.2826vi, 1.875rem);
   --font-body-size: clamp(1rem, .9432rem + .2273vi, 1.125rem);
   --font-body-weight: 400;
   --font-body-weight-bold: 600;
-  --font-display-family: Exo, "Helvetica Neue", sans-serif;
+  --font-display-family: MavenPro, "Helvetica Neue", sans-serif;
   --font-display-margin-block-start-1: clamp(2.25rem, 1.2935rem + 4.7826vi, 5rem);
   --font-display-margin-block-start-2: clamp(1.6875rem, .9701rem + 3.587vi, 3.75rem);
   --font-display-margin-block-start-3: clamp(.875rem, .5272rem + 1.7391vi, 1.875rem);
@@ -1486,8 +1512,8 @@
   --font-display-size-2: clamp(2.4883rem, 2.0588rem + 1.718vi, 3.4332rem);
   --font-display-size-3: clamp(2.0736rem, 1.7677rem + 1.2236vi, 2.7466rem);
   --font-display-size-4: clamp(1.728rem, 1.5147rem + .8532vi, 2.1973rem);
-  --font-display-weight: 800;
-  --font-heading-family: Exo, "Helvetica Neue", sans-serif;
+  --font-display-weight: 500;
+  --font-heading-family: MavenPro, "Helvetica Neue", sans-serif;
   --font-heading-margin-block-start-1: clamp(2.25rem, 1.2935rem + 4.7826vi, 5rem);
   --font-heading-margin-block-start-2: clamp(1.6875rem, .9701rem + 3.587vi, 3.75rem);
   --font-heading-margin-block-start-3: clamp(1.125rem, .6467rem + 2.3913vi, 2.5rem);
@@ -1497,7 +1523,7 @@
   --font-heading-size-2: clamp(2.0736rem, 1.7677rem + 1.2236vi, 2.7466rem);
   --font-heading-size-3: clamp(1.728rem, 1.5147rem + .8532vi, 2.1973rem);
   --font-heading-size-4: clamp(1.44rem, 1.2955rem + .5778vi, 1.7578rem);
-  --font-heading-weight: 700;
+  --font-heading-weight: 400;
   --font-size--1: clamp(.8333rem, .803rem + .1212vi, .9rem);
   --font-size--2: clamp(.6944rem, .6828rem + .0465vi, .72rem);
   --font-size-0: clamp(1rem, .9432rem + .2273vi, 1.125rem);
@@ -1544,11 +1570,17 @@
     --color-mono-200: #4d4d4d;
     --color-mono-100: #262626;
     --color-mono-000: #000;
-    --color-primary-600: #cdfcfe;
-    --color-primary-500: #81f7fd;
-    --color-primary-400: #36f2fc;
-    --color-primary-300: #03d7e2;
-    --color-primary-200: #028f97;
-    --color-primary-100: #01484b;
+    --color-primary-100: #482704;
+    --color-primary-200: #914f08;
+    --color-primary-300: #ca6e0c;
+    --color-primary-400: #f49c3e;
+    --color-primary-500: #f8c187;
+    --color-primary-600: #fce6cf;
+    --color-secondary-100: #12303a;
+    --color-secondary-200: #255f74;
+    --color-secondary-300: #32829f;
+    --color-secondary-400: #64b2ce;
+    --color-secondary-500: #9ecfe0;
+    --color-secondary-600: #d8ecf3;
   }
 }
