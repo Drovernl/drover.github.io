@@ -1,0 +1,6 @@
+.navigation-header {
+  color: var(--color-secondary-400);
+  a.active {
+    text-decoration: underline;
+  }
+}

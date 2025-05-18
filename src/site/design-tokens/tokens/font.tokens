@@ -5,9 +5,9 @@
         "$value": "Roboto, 'Helvetica Neue', sans-serif"
       },
       "weight": {
-        "$value": "400",
+        "$value": "300",
         "bold": {
-          "$value": "600"
+          "$value": "800"
         }
       },
       "size": {

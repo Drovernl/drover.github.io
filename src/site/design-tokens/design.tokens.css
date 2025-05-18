@@ -1,7 +1,7 @@
 :root {
  	--border-radius-circle: 9999px;
- 	--border-radius-pill: 0.5rem;
- 	--border-radius-rounded: 0.35rem;
+ 	--border-radius-pill: 2rem;
+ 	--border-radius-rounded: 1rem;
  	--button-primary-color: hsl(196, 52%, 41%);
  	--button-primary-contrast-color: hsl(0, 0%, 100%);
  	--color-mono-000: hsl(0, 0%, 100%);
@@ -27,8 +27,8 @@
  	--font-body-family: Roboto, 'Helvetica Neue', sans-serif;
  	--font-body-margin-block-start: clamp(0.5625rem, 0.106rem + 2.2826vi, 1.875rem);
  	--font-body-size: clamp(1rem, 0.9432rem + 0.2273vi, 1.125rem);
- 	--font-body-weight: 400;
- 	--font-body-weight-bold: 600;
+ 	--font-body-weight: 300;
+ 	--font-body-weight-bold: 800;
  	--font-display-family: MavenPro, 'Helvetica Neue', sans-serif;
  	--font-display-margin-block-start-1: clamp(2.25rem, 1.2935rem + 4.7826vi, 5rem);
  	--font-display-margin-block-start-2: clamp(1.6875rem, 0.9701rem + 3.587vi, 3.75rem);

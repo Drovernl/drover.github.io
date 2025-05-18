@@ -5,6 +5,7 @@ import { Segment } from '../segment/segment'
 import { Action } from '../action/action'
 import { ActionData } from '../action/action'
 import { getHrefAction } from '../../story-menu/get-href-action'
+import { replaceAll } from './parsers/replace-all'
 
 export type TopicData = {
   abstract?: string
@@ -100,9 +101,9 @@ export const Topic = (props: TopicProps) => {
           createElement(
             props.headingElement || headingElementType,
             { className: ['topic-heading', headingClass].join(' ') },
-            props.topic.heading,
+            replaceAll(props.topic.heading),
           )}
-        {props.topic.abstract && <p className="topic-abstract">{props.topic.abstract}</p>}
+        {props.topic.abstract && <p className="topic-abstract">{replaceAll(props.topic.abstract)}</p>}
         {props.topic.action && (
           <Action action={internalAction} className={['topic-action', actionClassName].join(' ')} element="a" />
         )}

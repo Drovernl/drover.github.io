@@ -1062,6 +1062,8 @@
   }
 }
 
+@layer ce;
+
 @layer utilities {
   .u-flex-1 {
     flex: 1;
@@ -1407,6 +1409,7 @@
     font-family: Roboto;
     src: url("/Roboto-Italic-VariableFont_wdth.ttf") format("truetype-variations");
     font-weight: 100 1000;
+    font-style: italic;
     font-stretch: 25% 151%;
     font-display: swap;
   }
@@ -1447,12 +1450,24 @@
     margin-block-start: 0;
   }
 
+  .markdown :is(strong, b) {
+    font-weight: var(--font-body-weight-bold);
+  }
+
   .site-header {
     font-family: var(--font-body-family);
     font-size: var(--font-size-0);
     font-weight: var(--font-body-weight);
     color: var(--color-primary-600);
     z-index: 100;
+  }
+
+  .navigation-header {
+    color: var(--color-secondary-400);
+  }
+
+  .navigation-header a.active {
+    text-decoration: underline;
   }
 
   .site-footer {
@@ -1462,19 +1477,19 @@
     margin-block-start: var(--space-3xl);
   }
 
-  .topic-profile .topic-picture img {
-    border: .35rem solid var(--color-primary-500);
-  }
-
   .topic .topic-icon, .topic .topic-labels {
     color: var(--color-primary-500);
+  }
+
+  .topic-featured .topic-picture img {
+    border-radius: var(--border-radius-rounded);
   }
 }
 
 :root {
   --border-radius-circle: 9999px;
-  --border-radius-pill: .5rem;
-  --border-radius-rounded: .35rem;
+  --border-radius-pill: 2rem;
+  --border-radius-rounded: 1rem;
   --button-primary-color: #32829f;
   --button-primary-contrast-color: #fff;
   --color-mono-000: #fff;
@@ -1500,8 +1515,8 @@
   --font-body-family: Roboto, "Helvetica Neue", sans-serif;
   --font-body-margin-block-start: clamp(.5625rem, .106rem + 2.2826vi, 1.875rem);
   --font-body-size: clamp(1rem, .9432rem + .2273vi, 1.125rem);
-  --font-body-weight: 400;
-  --font-body-weight-bold: 600;
+  --font-body-weight: 300;
+  --font-body-weight-bold: 800;
   --font-display-family: MavenPro, "Helvetica Neue", sans-serif;
   --font-display-margin-block-start-1: clamp(2.25rem, 1.2935rem + 4.7826vi, 5rem);
   --font-display-margin-block-start-2: clamp(1.6875rem, .9701rem + 3.587vi, 3.75rem);

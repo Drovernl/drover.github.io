@@ -1,26 +1,47 @@
 ---
 permalink: /
-tags: ['menu']
+tags: ['site']
 navigation:
   heading: Home
   order: 10
 
-date: 2024-03-18
+date: 2025-05-18
 lastmod: 2025-05-01
+
 openerTopic:
   heading: Drover
   abstract: Intro here.
-  image: /site/images/check.png
+  image: /site/images/ronaldo-de-oliveira-762836-unsplashbw.jpg
+
+verrassend:
+  heading: Een korte **introductie**
+  image: /site/images/Verrassend_geel__1_.png
+  abstract: "Wij zijn een ambitieus bureau dat graag op een luchtige en creatieve manier
+bijdraagt aan het introduceren van nieuw gedrag in jouw organisatie. Vanuit de
+vakinhoud en met liefde voor jullie werk.<br />
+<br />
+**Onze meerwaarde**<br />
+Wij zijn gespecialiseerd in het organiseren van het mensdeel rond datagedreven
+en digitaal werken. Als de tools en processen voorhanden zijn, dan helpen wij om
+te zorgen dat het werken hiermee logisch wordt. 
+"
 ---
 
-export { WideLayout as default } from '../layout/wide-layout'
+export { HomeLayout as default } from '../layout/home-layout'
+import { Picture } from '../../green-lib/components/picture/picture'
 import { Topic } from '../../green-lib/components/topic/topic'
 import { TopicList } from '../../green-lib/components/topic-list/topic-list'
-import { allBlogOpeners } from './helpers/all-blog-openers'
 
-<Topic variant="hero" topic={props.openerTopic} heading-element="h1" />
+
+<Topic topic={props.verrassend} variant="featured" swapImage={true} />
+
+<div className="s-grid u-grid-two-cols u-gap-xs">
+  <div>
+  </div>
+  <div>
+  </div>
+</div>
 
 ---
 
 Something here.
-

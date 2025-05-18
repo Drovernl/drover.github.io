@@ -1,0 +1,27 @@
+---
+permalink: /over-ons/
+tags: ['site']
+navigation:
+  heading: Over ons
+  order: 20
+
+date: 2025-05-18
+lastmod: 2025-05-01
+
+openerTopic:
+  heading: Drover
+  abstract: Intro here.
+  image: /site/images/check.png
+---
+
+export { WideLayout as default } from '../layout/wide-layout'
+import { Picture } from '../../green-lib/components/picture/picture'
+import { Topic } from '../../green-lib/components/topic/topic'
+import { TopicList } from '../../green-lib/components/topic-list/topic-list'
+
+<div className="s-popout">
+  <Topic variant="hero" topic={props.openerTopic} heading-element="h1" />
+</div>
+---
+
+Something here.

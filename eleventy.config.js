@@ -8,6 +8,7 @@ import * as runtime from 'react/jsx-runtime'
 import { build } from 'esbuild'
 import remarkGfm from 'remark-gfm'
 import rehypeHighlight from 'rehype-highlight'
+import { DateTime } from 'luxon'
 
 import 'tsx'
 
@@ -18,13 +19,19 @@ export default function (eleventyConfig) {
   eleventyConfig.ignores.add('**/draft/**.*')
 
   // Assets
-  eleventyConfig.addPassthroughCopy({ 'node_modules/feather-icons/dist/feather-sprite.svg': 'feather-sprite.svg' })
-  eleventyConfig.addPassthroughCopy({ 'src/assets/favicon/favicon.ico': 'favicon.ico' })
   eleventyConfig.addPassthroughCopy({
-    'src/assets/fonts/Exo-VariableFont_wght.ttf': 'Exo-VariableFont_wght.ttf',
-    'src/assets/fonts/Montserrat-VariableFont_wght.ttf': 'Montserrat-VariableFont_wght.ttf',
+    'node_modules/feather-icons/dist/feather-sprite.svg': 'feather-sprite.svg',
+    'src/site/favicon/favicon.ico': 'favicon.ico',
+  })
 
-    // Drover
+  // Fonts
+  eleventyConfig.addPassthroughCopy({
+    'src/site/fonts/Montserrat-VariableFont_wght.ttf': 'Montserrat-VariableFont_wght.ttf',
+    'src/site/fonts/Exo-VariableFont_wght.ttf': 'Exo-VariableFont_wght.ttf',
+  })
+
+  // Drover
+  eleventyConfig.addPassthroughCopy({
     'src/site/fonts/MavenPro-VariableFont_wght.ttf': 'MavenPro-VariableFont_wght.ttf',
     'src/site/fonts/Roboto-Italic-VariableFont_wdth.ttf': 'Roboto-Italic-VariableFont_wdth.ttf',
     'src/site/fonts/Roboto-VariableFont_wdth.ttf': 'Roboto-VariableFont_wdth.ttf',
@@ -39,6 +46,11 @@ export default function (eleventyConfig) {
       },
     },
   })
+
+  // Filters
+  eleventyConfig.addFilter('postDate', (dateObj) =>
+    DateTime.fromJSDate(dateObj, { zone: 'Europe/Amsterdam' }).setLocale('en').toISO(),
+  )
 
   // MDX Template format
   eleventyConfig.addTemplateFormats('mdx')

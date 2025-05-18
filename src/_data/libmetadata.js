@@ -1,10 +1,10 @@
 const libmetadata = {
   branding: {
     copyright: 'Copyright © 2024 Jacco Meijer',
-    description: 'UI Stories for Green Lib',
+    description: 'Solutions and Security Architect',
     heading: 'Green UI Lib',
-    icon: 'home',
-    url: '/',
+    icon: 'globe',
+    url: '/green-lib',
   },
   vendor: {
     heading: 'Green UI Lib',
@@ -15,6 +15,15 @@ const libmetadata = {
   content: {
     generator: '11ty',
     language: 'nl',
+  },
+  source: {
+    heading: 'Source',
+    icon: 'github',
+    url: 'https://github.com/Drovernl/drovernl.github.io',
+  },
+  system: {
+    basePath: '',
+    globalCssUrl: '/green-lib/story-layout/layout.css',
   },
 }
 

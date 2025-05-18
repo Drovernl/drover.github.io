@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'MavenPro';
-  src: url('/MavenPro-VariableFont_wght.ttf') format("truetype-variations");
+  src: url('/MavenPro-VariableFont_wght.ttf') format('truetype-variations');
   font-weight: 100 1000;
   font-stretch: 25% 151%;
   font-display: swap;
@@ -10,15 +10,16 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('/Roboto-Italic-VariableFont_wdth.ttf') format("truetype-variations");
+  src: url('/Roboto-Italic-VariableFont_wdth.ttf') format('truetype-variations');
   font-weight: 100 1000;
+  font-style: italic;
   font-stretch: 25% 151%;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url('/Roboto-VariableFont_wdth.ttf') format("truetype-variations");
+  src: url('/Roboto-VariableFont_wdth.ttf') format('truetype-variations');
   font-weight: 100 1000;
   font-stretch: 25% 151%;
   font-display: swap;

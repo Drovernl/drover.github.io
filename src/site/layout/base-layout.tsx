@@ -11,12 +11,12 @@ export interface BaseLayout {
 }
 
 export const BaseLayout = (props: BaseLayout & EleventyData) => {
-  const mainMenuItems = getMenuItems({ collections: props.collections, pathFilter: 'menu' })
+  const mainMenuItems = getMenuItems(props.collections.site)
 
   return (
     <html lang={props.sitemetadata.content.language}>
       <Head
-        cssUrls={[props.sitesystemdata.globalCssUrl]}
+        cssUrls={[props.sitemetadata.system.globalCssUrl]}
         description={props.sitemetadata.branding.description}
         favIconUrl="/favicon.ico"
         generator={props.sitemetadata.content.generator}
@@ -33,7 +33,7 @@ export const BaseLayout = (props: BaseLayout & EleventyData) => {
               mainActions={mainMenuItems}
               pageUrl={props.page.url}
               socialActions={actions.social}
-              systemData={props.sitesystemdata}
+              globalCssUrl={props.sitemetadata.system.globalCssUrl}
             />
           </div>
         </header>
@@ -45,7 +45,7 @@ export const BaseLayout = (props: BaseLayout & EleventyData) => {
             <NavigationFooter pageUrl={props.page.url} mainActions={mainMenuItems} socialActions={actions.social} />
           </div>
           <div className="s-block-space u-block-space-2xs u-border-top">
-            <NavigationLegal />
+            <NavigationLegal vendor={props.sitemetadata.vendor} branding={props.sitemetadata.branding} />
           </div>
         </footer>
       </body>

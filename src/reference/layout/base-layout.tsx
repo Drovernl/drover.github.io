@@ -11,12 +11,12 @@ export interface BaseLayout {
 }
 
 export const BaseLayout = (props: BaseLayout & EleventyData) => {
-  const mainMenuItems = getMenuItems({ collections: props.collections, pathFilter: 'reference' })
+  const mainMenuItems = getMenuItems(props.collections.ref)
 
   return (
     <html lang={props.refmetadata.content.language}>
       <Head
-        cssUrls={[props.refsystemdata.globalCssUrl]}
+        cssUrls={[props.refmetadata.system.globalCssUrl]}
         description={props.refmetadata.branding.description}
         favIconUrl="/favicon.ico"
         generator={props.refmetadata.content.generator}
@@ -33,7 +33,7 @@ export const BaseLayout = (props: BaseLayout & EleventyData) => {
               mainActions={mainMenuItems}
               pageUrl={props.page.url}
               socialActions={actions.social}
-              systemData={props.refsystemdata}
+              globalCssUrl={props.refmetadata.system.globalCssUrl}
             />
           </div>
         </header>

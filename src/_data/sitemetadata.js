@@ -1,8 +1,9 @@
 const sitemetadata = {
   branding: {
     copyright: 'Copyright © 2024 Drover',
-    description: 'Sociaal Psycholoog',
+    description: 'Bart Wagenaar',
     heading: 'Drover',
+    icon: 'home',
     url: '/',
   },
   vendor: {
@@ -14,6 +15,15 @@ const sitemetadata = {
   content: {
     generator: '11th',
     language: 'nl',
+  },
+  source: {
+    heading: 'Source',
+    icon: 'github',
+    url: 'https://github.com/Drovernl/drovernl.github.io',
+  },
+  system: {
+    basePath: '',
+    globalCssUrl: '/site/layout/layout.css',
   },
 }
 
