@@ -7,7 +7,7 @@
     "url": "git+https://github.com/jaccomeijer"
   },
   "scripts": {
-    "build": "npm run clean-docs && npx @11ty/eleventy && npm run create-cname && npm run create-robots",
+    "build": "npm run clean-docs && npx @11ty/eleventy && npm run create-robots",
     "check-links": "find src -type f -name *.mdx -exec npx markdown-link-check --quiet {} \\;",
     "clean-docs": "rm -rf docs",
     "create-cname": "echo www.drover.nl > docs/CNAME",

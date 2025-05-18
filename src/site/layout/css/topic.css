@@ -1,15 +1,16 @@
 .topic {
   .topic-icon {
-    color: var(--color-primary-500);
+    color: var(--color-primary-400);
   }
 
   .topic-labels {
-    color: var(--color-primary-500);
+    color: var(--color-primary-400);
   }
 }
 
-.topic-featured {
+.topic-featured,
+.topic-showcase {
   .topic-picture img {
-    border-radius: var(--border-radius-rounded);
+    border-radius: var(--border-radius-pill);
   }
 }

@@ -1,0 +1,40 @@
+---
+permalink: /ons-werk/
+tags: ['site']
+navigation:
+  heading: Ons werk
+  order: 40
+
+date: 2025-05-18
+lastmod: 2025-05-01
+
+openerTopic:
+  heading: Onze **werk**
+  abstract: "Vanuit het principe 'show don't tell' op deze pagina zoveel
+    mogelijk over het werk dat wij doen.<br />
+    <br />
+    Bekijk onze portfolio: onze opdrachten, producten en concepten. Wellicht kunnen wij
+    met een vergelijkbare aanpak iets voor jou betekenen."
+  image: /site/images/johan-mouchet-132723-unsplashbw.jpg
+
+opdrachten:
+  heading: Opdrachten
+  abstract: Hier vind je een selectie van onze meest recente opdrachten.
+  icon: arrow-down
+
+---
+
+export { PageLayout as default } from '../layout/page-layout'
+import { Picture } from '../../green-lib/components/picture/picture'
+import { Topic } from '../../green-lib/components/topic/topic'
+import { TopicList } from '../../green-lib/components/topic-list/topic-list'
+import { allWorkOpeners } from './helpers/all-work-openers'
+
+<Topic topic={props.opdrachten} variant="headline" />
+
+<TopicList 
+  className="s-grid u-grid-one-cols u-gap-xl"
+  variant="featured"
+  swapImage={true}
+  topics={allWorkOpeners(props)}
+/>

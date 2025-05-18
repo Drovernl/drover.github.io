@@ -1,6 +1,6 @@
 const libmetadata = {
   branding: {
-    copyright: 'Copyright © 2024 Jacco Meijer',
+    copyright: 'Copyright © 2025 Jacco Meijer',
     description: 'Solutions and Security Architect',
     heading: 'Green UI Lib',
     icon: 'globe',

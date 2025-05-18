@@ -1,6 +1,5 @@
 ---
 permalink: /
-tags: ['site']
 navigation:
   heading: Home
   order: 10
@@ -9,22 +8,68 @@ date: 2025-05-18
 lastmod: 2025-05-01
 
 openerTopic:
-  heading: Drover
-  abstract: Intro here.
   image: /site/images/ronaldo-de-oliveira-762836-unsplashbw.jpg
 
-verrassend:
+introductie:
   heading: Een korte **introductie**
   image: /site/images/Verrassend_geel__1_.png
-  abstract: "Wij zijn een ambitieus bureau dat graag op een luchtige en creatieve manier
-bijdraagt aan het introduceren van nieuw gedrag in jouw organisatie. Vanuit de
-vakinhoud en met liefde voor jullie werk.<br />
-<br />
-**Onze meerwaarde**<br />
-Wij zijn gespecialiseerd in het organiseren van het mensdeel rond datagedreven
-en digitaal werken. Als de tools en processen voorhanden zijn, dan helpen wij om
-te zorgen dat het werken hiermee logisch wordt. 
-"
+  abstract: Wij zijn een ambitieus bureau dat graag op een luchtige en creatieve manier
+    bijdraagt aan het introduceren van nieuw gedrag in jouw organisatie. Vanuit de
+    vakinhoud en met liefde voor jullie werk.<br />
+    <br />
+    **Onze meerwaarde**<br />
+    Wij zijn gespecialiseerd in het organiseren van het mensdeel rond datagedreven
+    en digitaal werken. Als de tools en processen voorhanden zijn, dan helpen wij om
+    te zorgen dat het werken hiermee logisch wordt.
+  action:
+    heading: Meer over Drover
+    url: /over-ons
+
+hart:
+  heading: Waar ons **hart** ligt
+  abstract: Wij helpen jou om de mogelijkheden van jullie data en IT te realiseren door
+    bij te dragen aan bijpassend gedrag op de werkvloer. We helpen met de **strategie**, met
+    **verandermateriaal** en **begeleiden** bij de uitvoer.<br />
+    <br />
+    Samen werken we aan het logisch maken van nieuw gedrag. 
+  icon: heart
+
+sleutelprincipes:
+  heading: Onze **sleutelprincipes**
+
+nieuwsgierig:
+  heading: We zijn **nieuwsgierig**
+  abstract: We willen tot de kern komen. Want als we jullie niet begrijpen, dan kunnen we
+    ook geen passende voorstellen doen. We stellen vragen, leren van jullie
+    ervaringen en testen graag in de praktijk. We mogen verrassen
+  icon: message-circle
+
+verrassen:
+  heading: We mogen **verrassen**
+  abstract: We durven anders te zijn. Het mag onverwacht zijn. Als het mooi en bijzonder is,
+    dan valt het meer op en bereiken we meer. Maar we verrassen jullie nooit zomaar.
+    Altijd alleen als het bijdraagt aan jullie doel. We willen bijdragen
+  icon: heart
+
+bijdragen:
+  heading: We willen **bijdragen**
+  abstract: Simpel; we willen dat het klopt wat we doen. We werken niet aan luchtkastelen.
+    We zorgen ervoor dat er altijd een heldere link met jullie praktijk is en dat
+    ons werk een voelbare meerwaarde voor jullie heeft. 
+  icon: target
+
+aanpak:
+  heading: Onze **aanpak**
+  image: /site/images/logisch.png
+  abstract: We zoeken altijd met jou naar een aanpak die uitnodigt om mee te doen.<br />
+    <br />
+    We focussen op het **verhaal** waarmee de boodschap wordt gebracht, op de **situatie**
+    waarin jullie verandering plaatsvindt en op de **sleutelfiguren** die de verandering
+    een succes maken.
+  action:
+    heading: Meer over onze werkwijze
+    url: /werkwijze
+
 ---
 
 export { HomeLayout as default } from '../layout/home-layout'
@@ -32,16 +77,19 @@ import { Picture } from '../../green-lib/components/picture/picture'
 import { Topic } from '../../green-lib/components/topic/topic'
 import { TopicList } from '../../green-lib/components/topic-list/topic-list'
 
+<Topic topic={props.introductie} variant="featured" swapImage={true} />
 
-<Topic topic={props.verrassend} variant="featured" swapImage={true} />
+<Topic topic={props.hart} variant="headline" className="u-block-space-xl s-block-space" />
 
-<div className="s-grid u-grid-two-cols u-gap-xs">
-  <div>
-  </div>
-  <div>
+<div className="u-bg-mono-100 s-popout u-block-space-xl s-block-space">
+  <Topic topic={props.sleutelprincipes} variant="headline" className='u-margin-block-start-0' />
+  <div className="s-wrapper">
+    <TopicList 
+      className="s-grid u-grid-four-cols u-gap-xl"
+      variant="block"
+      topics={[props.nieuwsgierig, props.verrassen, props.bijdragen]}
+    />
   </div>
 </div>
 
----
-
-Something here.
+<Topic topic={props.aanpak} variant="featured" />

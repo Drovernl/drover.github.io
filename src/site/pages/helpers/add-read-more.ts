@@ -7,7 +7,7 @@ export interface AddReadMore {
 
 export const addReadMore = ({ topic, url }: AddReadMore) => {
   const action = {
-    heading: 'read more',
+    heading: 'Bekijk opdracht',
     url,
   }
 

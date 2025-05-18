@@ -1,6 +1,6 @@
 const sitemetadata = {
   branding: {
-    copyright: 'Copyright © 2024 Drover',
+    copyright: 'Copyright © 2025 Drover',
     description: 'Bart Wagenaar',
     heading: 'Drover',
     icon: 'home',

@@ -1,0 +1,39 @@
+---
+permalink: /werkwijze/
+tags: ['site']
+navigation:
+  heading: Werkwijze
+  order: 30
+
+date: 2025-05-18
+lastmod: 2025-05-01
+
+openerTopic:
+  heading: Onze **werkwijze**
+  abstract: "Iedere opdracht benaderen we met dezelfde mindset: we zijn nieuwsgierig, we
+    durven te verrassen en willen bijdragen.<br />
+    <br />
+    Maar een mindset alleen is niet voldoende. We staan voor ons vak. We werken
+    altijd met een structuur voor ogen en kunnen terugvallen op een breed
+    instrumentarium."
+  image: /site/images/bogdan-kupriets-723311-unsplashbw__1_.jpg
+
+vak:
+  heading: Wat ons **drijft**
+  image: /site/images/doen_geel__1_.png
+  abstract: "Er zijn de afgelopen jaren grote stappen gezet op ons vakgebied. Er is veel
+    kennis over effectief veranderen. Wij willen dit inzetten op die plekken waar
+    het voor jullie van meerwaarde is.<br />
+    <br />
+    Het gaat om veel meer dan alleen vertellen en zorgen dat jullie weten wat te
+    doen. Het gaat om het creëren van een totale situatie waarin we het doen logisch
+    maken."
+
+---
+
+export { PageLayout as default } from '../layout/page-layout'
+import { Picture } from '../../green-lib/components/picture/picture'
+import { Topic } from '../../green-lib/components/topic/topic'
+import { TopicList } from '../../green-lib/components/topic-list/topic-list'
+
+<Topic topic={props.vak} variant="featured" swapImage={true} />

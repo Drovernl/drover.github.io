@@ -1478,18 +1478,80 @@
   }
 
   .topic .topic-icon, .topic .topic-labels {
-    color: var(--color-primary-500);
+    color: var(--color-primary-400);
   }
 
-  .topic-featured .topic-picture img {
-    border-radius: var(--border-radius-rounded);
+  :is(.topic-featured, .topic-showcase) .topic-picture img {
+    border-radius: var(--border-radius-pill);
+  }
+
+  .home-layout .topic-hero {
+    margin-block-start: 0;
+  }
+
+  .home-layout .home-logo {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    position: absolute;
+    top: 2rem;
+  }
+
+  .home-layout .home-logo picture {
+    width: auto;
+  }
+
+  .home-layout .home-logo img {
+    max-width: 500px;
+  }
+
+  .home-layout .home-logo h1 {
+    color: #fff;
+    margin-block-start: 1rem;
+  }
+
+  .page-layout .topic-hero {
+    min-height: 75vh;
+    margin-block-start: 0;
+    padding: 8rem 1rem;
+  }
+
+  .page-layout .topic-hero .topic-picture {
+    height: 100%;
+    margin-top: -8rem;
+    position: absolute;
+  }
+
+  .page-layout .topic-hero .topic-picture img {
+    height: 100%;
+    min-height: auto;
+  }
+
+  .page-layout .topic-hero .topic-content {
+    background-color: var(--color-secondary-400);
+    border-radius: var(--border-radius-pill);
+    opacity: .9;
+    max-width: 40rem;
+    padding: var(--space-l);
+    width: auto;
+    margin-right: 10vw;
+    position: relative;
+  }
+
+  .page-layout .topic-hero .topic-content .topic-abstract {
+    max-width: 100ch;
+    font-weight: 200;
   }
 }
 
 :root {
   --border-radius-circle: 9999px;
-  --border-radius-pill: 2rem;
-  --border-radius-rounded: 1rem;
+  --border-radius-pill: 1rem;
+  --border-radius-rounded: .5rem;
   --button-primary-color: #32829f;
   --button-primary-contrast-color: #fff;
   --color-mono-000: #fff;
@@ -1527,7 +1589,7 @@
   --font-display-size-2: clamp(2.4883rem, 2.0588rem + 1.718vi, 3.4332rem);
   --font-display-size-3: clamp(2.0736rem, 1.7677rem + 1.2236vi, 2.7466rem);
   --font-display-size-4: clamp(1.728rem, 1.5147rem + .8532vi, 2.1973rem);
-  --font-display-weight: 500;
+  --font-display-weight: 400;
   --font-heading-family: MavenPro, "Helvetica Neue", sans-serif;
   --font-heading-margin-block-start-1: clamp(2.25rem, 1.2935rem + 4.7826vi, 5rem);
   --font-heading-margin-block-start-2: clamp(1.6875rem, .9701rem + 3.587vi, 3.75rem);
@@ -1538,7 +1600,7 @@
   --font-heading-size-2: clamp(2.0736rem, 1.7677rem + 1.2236vi, 2.7466rem);
   --font-heading-size-3: clamp(1.728rem, 1.5147rem + .8532vi, 2.1973rem);
   --font-heading-size-4: clamp(1.44rem, 1.2955rem + .5778vi, 1.7578rem);
-  --font-heading-weight: 400;
+  --font-heading-weight: 300;
   --font-size--1: clamp(.8333rem, .803rem + .1212vi, .9rem);
   --font-size--2: clamp(.6944rem, .6828rem + .0465vi, .72rem);
   --font-size-0: clamp(1rem, .9432rem + .2273vi, 1.125rem);

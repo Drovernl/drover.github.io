@@ -1,10 +1,10 @@
 import { EleventyData } from '../../../_data/eleventy-data-types'
 import { TopicData } from '../../../green-lib/components/topic/topic'
+import TextLayout from '../werk/stedin.mdx'
 import { addReadMore } from './add-read-more'
-import { BlogLayout } from './blog-layout'
 
-export const allBlogOpeners = (props: BlogLayout & EleventyData) => {
-  const collectionWithTag = props.collections.blog.filter((collection) => collection.data.openerTopic)
+export const allWorkOpeners = (props: TextLayout & EleventyData) => {
+  const collectionWithTag = props.collections.werk.filter((collection) => collection.data.openerTopic)
 
   const openerTopics: TopicData[] = collectionWithTag.map((collection) => {
     const openerTopic = structuredClone(collection.data.openerTopic!)

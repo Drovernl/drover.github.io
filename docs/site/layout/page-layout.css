@@ -1,0 +1,32 @@
+.page-layout .topic-hero {
+  min-height: 75vh;
+  margin-block-start: 0;
+  padding: 8rem 1rem;
+}
+
+.page-layout .topic-hero .topic-picture {
+  height: 100%;
+  margin-top: -8rem;
+  position: absolute;
+}
+
+.page-layout .topic-hero .topic-picture img {
+  height: 100%;
+  min-height: auto;
+}
+
+.page-layout .topic-hero .topic-content {
+  background-color: var(--color-secondary-400);
+  border-radius: var(--border-radius-pill);
+  opacity: .9;
+  max-width: 40rem;
+  padding: var(--space-l);
+  width: auto;
+  margin-right: 10vw;
+  position: relative;
+}
+
+.page-layout .topic-hero .topic-content .topic-abstract {
+  max-width: 100ch;
+  font-weight: 200;
+}

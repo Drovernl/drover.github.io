@@ -1,0 +1,28 @@
+.home-layout .topic-hero {
+  margin-block-start: 0;
+}
+
+.home-layout .home-logo {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  position: absolute;
+  top: 2rem;
+}
+
+.home-layout .home-logo picture {
+  width: auto;
+}
+
+.home-layout .home-logo img {
+  max-width: 500px;
+}
+
+.home-layout .home-logo h1 {
+  color: #fff;
+  margin-block-start: 1rem;
+}

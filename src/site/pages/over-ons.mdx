@@ -9,19 +9,29 @@ date: 2025-05-18
 lastmod: 2025-05-01
 
 openerTopic:
-  heading: Drover
-  abstract: Intro here.
-  image: /site/images/check.png
+  heading: Over **ons**
+  abstract: Wij zijn een ambitieus bureau dat graag op een luchtige 
+    en creatieve manier bijdraagt aan het aanpassen en aanleren van
+    nieuw gedrag als jullie organisatie aan het veranderen is.<br />
+    <br />
+    Vanuit de vakinhoud en met liefde voor jullie werk.
+  image: /site/images/johan-mouchet-132723-unsplashbw.jpg
+
+drijft:
+  heading: Wat ons **drijft**
+  image: /site/images/Verrassend_geel__1_.png
+  abstract: Wij worden enthousiast van het sociale en het gedragsgedeelte van jullie
+    verandertrajecten. Hoe zorgen we dat iedereen hetzelfde voor ogen heeft en
+    hetzelfde doet? Hoe krijgen we iedereen mee? Wij willen wel, maar doen het maar
+    niet...<br />
+    <br />
+    Bij dit soort drempels helpen wij jullie **d'rover** :-). 
+
 ---
 
-export { WideLayout as default } from '../layout/wide-layout'
+export { PageLayout as default } from '../layout/page-layout'
 import { Picture } from '../../green-lib/components/picture/picture'
 import { Topic } from '../../green-lib/components/topic/topic'
 import { TopicList } from '../../green-lib/components/topic-list/topic-list'
 
-<div className="s-popout">
-  <Topic variant="hero" topic={props.openerTopic} heading-element="h1" />
-</div>
----
-
-Something here.
+<Topic topic={props.drijft} variant="featured" swapImage={true} />

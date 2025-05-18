@@ -1,6 +1,6 @@
 const refmetadata = {
   branding: {
-    copyright: 'Copyright © 2024 Jacco Meijer',
+    copyright: 'Copyright © 2025 Jacco Meijer',
     description: 'UI Stories',
     heading: 'Reference',
     icon: 'home',

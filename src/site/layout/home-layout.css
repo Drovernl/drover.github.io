@@ -1,0 +1,29 @@
+.home-layout {
+  .topic-hero {
+    margin-block-start: 0;
+  }
+  .home-logo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+    position: absolute;
+    top: 2rem;
+    text-align: center;
+    width: 100%;
+
+    picture {
+      width: auto;
+    }
+
+    img {
+      max-width: 500px;
+    }
+
+    h1 {
+      color: white;
+      margin-block-start: 1rem;
+    }
+  }
+}
