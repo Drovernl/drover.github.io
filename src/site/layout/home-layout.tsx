@@ -24,10 +24,6 @@ export const HomeLayout = (props: HomeLayout & EleventyData) => {
       <div className="s-wrapper">
         <article className="markdown s-flex-column u-gap-0">{props.children}</article>
       </div>
-      <div className="s-wrapper markdown">
-        <hr />
-        <h2>Footer</h2>
-      </div>
     </BaseLayout>
   )
 }

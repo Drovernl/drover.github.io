@@ -2,9 +2,11 @@
   .topic-icon {
     color: var(--color-primary-400);
   }
-
   .topic-labels {
     color: var(--color-primary-400);
+  }
+  ul.topic-abstract {
+    list-style: none;
   }
 }
 

@@ -1,0 +1,33 @@
+.site-footer-info {
+  background-color: var(--color-secondary-400);
+  color: var(--color-mono-000);
+  font-family: var(--font-body-family);
+  font-size: var(--font-size-0);
+  font-weight: var(--font-body-weight);
+  margin-block-start: var(--space-xl);
+  --wrapper-width: 60rem;
+  .footer-logo {
+    margin: var(--space-l) auto;
+    max-width: 200px;
+  }
+  .topic-block {
+    border: 1px solid var(--color-secondary-300);
+    border-radius: var(--border-radius-rounded);
+    padding: 1rem;
+  }
+}
+
+.site-footer-nav {
+  background-color: var(--color-secondary-400);
+  color: var(--color-mono-000);
+  font-family: var(--font-body-family);
+  font-size: var(--font-size-0);
+  font-weight: var(--font-body-weight);
+  padding-block: var(--space-s);
+}
+
+.site-footer-legal {
+  font-family: var(--font-body-family);
+  font-size: var(--font-size-0);
+  font-weight: var(--font-body-weight);
+}

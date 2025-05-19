@@ -5,10 +5,10 @@
 
 @import './css/font.css' layer(custom);
 @import './css/markdown.css' layer(custom);
-@import './css/site-header.css' layer(custom);
-@import './css/navigation-header.css' layer(custom);
-@import './css/site-footer.css' layer(custom);
-@import './css/topic.css' layer(custom);
+@import './site-header.css' layer(custom);
+@import './navigation-header.css' layer(custom);
+@import './site-footer.css' layer(custom);
+@import './topic.css' layer(custom);
 @import './home-layout.css' layer(custom);
 @import './page-layout.css' layer(custom);
 
