@@ -9,7 +9,7 @@
   "scripts": {
     "build": "npm run clean-docs && npx @11ty/eleventy && npm run create-robots",
     "check-links": "find src -type f -name *.mdx -exec npx markdown-link-check --quiet {} \\;",
-    "clean-docs": "rm -rf docs",
+    "clean-docs": "npx rimraf docs",
     "create-cname": "echo www.drover.nl > docs/CNAME",
     "create-robots": "echo 'Sitemap: https://www.drover.nl/sitemap.xml' > docs/robots.txt",
     "design-tokens-lib": "designTokens transform src/green-lib/design-tokens/tokens.config.json",
